@@ -1,4 +1,4 @@
-# PhaleiXo - Desenvolvimento de Sistemas
+# Phalexo - Desenvolvimento de Sistemas
 
 ![Next.js](https://img.shields.io/badge/Next.js-15.5.3-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-19.1.0-blue?style=for-the-badge&logo=react)
@@ -282,10 +282,10 @@ Para suporte ou dúvidas sobre o projeto:
 
 ## 📜 Licença
 
-Este projeto é privado e proprietário da PhaleiXo.
+Este projeto é privado e proprietário da Phaleixo.
 
 ---
 
-**Desenvolvido com ❤️ por PhaleiXo**
+**Desenvolvido com ❤️ por Phaleixo**
 
 _Transformando ideias em soluções digitais eficientes e escaláveis._
