@@ -9,10 +9,10 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Phaleixo - Desenvolvimento de Sistemas",
+  title: "phaleixo - Soluções Digitais",
   description: "Especialista em desenvolvimento de sistemas web, sites modernos e integrações WhatsApp. Transformo ideias em soluções digitais eficientes e escaláveis.",
   keywords: "desenvolvimento de sistemas, sites modernos, integração whatsapp, sistemas web, phaleixo",
-  authors: [{ name: "Phaleixo" }],
+  authors: [{ name: "phaleixo" }],
 };
 
 export const viewport: Viewport = {
