@@ -38,7 +38,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ openWhatsApp }) 
             <div className="space-y-8">
               {/* WhatsApp */}
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-green-300 rounded-lg flex items-center justify-center flex-shrink-0">
                   <WhatsAppIcon />
                 </div>
                 <div>

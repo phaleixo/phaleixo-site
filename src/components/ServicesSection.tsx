@@ -1,8 +1,8 @@
 import React from 'react';
-import { CheckIcon } from './Icons';
+import { CheckIcon, WhatsAppIcon } from './Icons';
 
 interface Service {
-  icon: string;
+  icon: string | React.ReactNode;
   title: string;
   description: string;
   features: string[];
@@ -22,7 +22,7 @@ const services: Service[] = [
     features: ["Dashboard Personalizado", "API Rest", "Banco de Dados", "Relatórios Avançados"]
   },
   {
-    icon: "💬",
+    icon: <div className="text-green-500 w-12 h-12"><WhatsAppIcon /></div>,
     title: "Integração WhatsApp",
     description: "Conecte seus sistemas ao WhatsApp Business com chatbots inteligentes e automação de atendimento.",
     features: ["Chatbot Avançado", "Automação Completa", "Multi-atendimento", "Analytics Detalhado"]
@@ -47,8 +47,8 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => (
   <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group hover:-translate-y-2">
-    <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">
-      {service.icon}
+    <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-start">
+      {typeof service.icon === 'string' ? service.icon : service.icon}
     </div>
     <h3 className="text-xl font-bold text-gray-900 mb-4">{service.title}</h3>
     <p className="text-gray-600 mb-6">{service.description}</p>

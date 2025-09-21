@@ -50,8 +50,8 @@ export default function LandingPages() {
     },
     {
       name: "ChatBot WhatsApp IA",
-      price: "R$ 250",
-      period: "/ano",
+      price: "Consulte valores",
+      period: "",
       description: "Automatize seu atendimento com inteligência artificial",
       features: [
         "Chatbot inteligente com IA",
@@ -67,8 +67,8 @@ export default function LandingPages() {
     },
     {
       name: "Solução Completa",
-      price: "R$ 450",
-      period: "/ano",
+      price: "Consulte valores",
+      period: "",
       description: "Landing page + chatbot IA em um pacote completo",
       features: [
         "Landing page responsiva",
@@ -358,7 +358,7 @@ export default function LandingPages() {
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">{plan.name}</h3>
                   <p className="text-gray-600 mb-4">{plan.description}</p>
                   <div className="flex items-baseline justify-center">
-                    <span className="text-5xl font-bold text-gray-800">{plan.price}</span>
+                    <span className="text-2xl font-bold text-gray-800">{plan.price}</span>
                     <span className="text-gray-500 ml-1">{plan.period}</span>
                   </div>
                 </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface HeaderProps {
   isMenuOpen: boolean;
@@ -13,7 +14,13 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen, scrol
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            
+            <Image 
+              src="/phaleixo-solucoesdigitais.svg" 
+              alt="PHALEIXO - SOLUÇÕES DIGITAIS" 
+              width={148}
+              height={48}
+              className="h-8 w-auto brightness-0"
+            />
           </div>
           
           {/* Desktop Navigation */}

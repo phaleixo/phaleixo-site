@@ -2,7 +2,7 @@
 export const CONTACT_CONFIG = {
   
   whatsapp: {
-    number: '5516988380508', // TODO: Replace with your actual WhatsApp number
+    number: '5516997467890', // TODO: Replace with your actual WhatsApp number
     messages: {
       general: 'Olá! Gostaria de conversar sobre desenvolvimento de sistemas.',
       landingPage: 'Olá! Tenho interesse em criar uma landing page para minha empresa. Podemos conversar?'

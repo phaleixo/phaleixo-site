@@ -1,291 +1,748 @@
-# PhaleiXo - Desenvolvimento de Sistemas
+# 🚀 PHALEIXO - Site Corporativo
 
 ![Next.js](https://img.shields.io/badge/Next.js-15.5.3-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-19.1.0-blue?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-38B2AC?style=for-the-badge&logo=tailwind-css)
 
-Site profissional moderno para a PhaleiXo, especializada em desenvolvimento de sistemas web, criação de landing pages e integrações WhatsApp.
+Site corporativo moderno da **PHALEIXO - Soluções Digitais**, especializada em desenvolvimento de sistemas web, landing pages profissionais, integrações WhatsApp e manutenção de computadores.
 
-## 🚀 Características
+## 📋 Índice
 
-- **Design Moderno**: Interface responsiva com glassmorphism e animações CSS
-- **Performance Otimizada**: Next.js 15 com Turbopack para desenvolvimento rápido
-- **Componentizado**: Arquitetura modular React com TypeScript
-- **SEO Otimizado**: Metadados configurados para melhor indexação
-- **Integração WhatsApp**: Sistema centralizado de contato via WhatsApp
-- **Responsivo**: Design adaptado para desktop, tablet e mobile
+- [🎯 Visão Geral](#-visão-geral)
+- [🌟 Características](#-características)
+- [📱 Páginas e Funcionalidades](#-páginas-e-funcionalidades)
+- [🛠️ Tecnologias](#️-tecnologias)
+- [📦 Estrutura do Projeto](#-estrutura-do-projeto)
+- [🚀 Instalação e Execução](#-instalação-e-execução)
+- [⚙️ Configuração](#️-configuração)
+- [🎨 Design e UI/UX](#-design-e-uiux)
+- [📱 Responsividade](#-responsividade)
+- [🔧 Desenvolvimento](#-desenvolvimento)
+- [🚀 Deploy](#-deploy)
+- [📊 Performance](#-performance)
+- [🔒 Segurança](#-segurança)
 
-## 🎨 Seções do Site
+## 🎯 Visão Geral
 
-### Página Principal (`/`)
+Site corporativo desenvolvido em **Next.js 15** com **React 19** e **TypeScript**, focado em:
 
-- **Hero Section**: Apresentação da empresa com call-to-action
-- **Serviços**: Desenvolvimento Web, Landing Pages, Integração WhatsApp
-- **Portfólio**: Projetos em destaque (comentado no código)
-- **CTA Section**: Chamada para ação principal
-- **Contato**: Informações de contato e WhatsApp
-- **Footer**: Links e informações da empresa
+- **Desenvolvimento de Sistemas Web**
+- **Criação de Landing Pages**
+- **Integrações WhatsApp Business**
+- **Manutenção de Computadores**
+- **Soluções Digitais Corporativas**
 
-### Página Landing Pages (`/landing-pages`)
+## 🌟 Características
 
-- Foco específico em criação de landing pages
-- Portfolio de projetos de landing pages
-- Processo de desenvolvimento detalhado
-- Call-to-action otimizado para conversão
+### ✨ Design Moderno
 
-## 🛠️ Tecnologias Utilizadas
+- **Glassmorphism Effects** - Efeitos de vidro modernos
+- **Gradientes Sofisticados** - Backgrounds com degradês
+- **Animações CSS Avançadas** - Transições suaves e micro-interações
+- **Interface Limpa** - Design minimalista e profissional
 
-### Frontend
+### 🚀 Performance
 
-- **Next.js 15.5.3** - Framework React com Turbopack
-- **React 19.1.0** - Biblioteca para interfaces de usuário
-- **TypeScript 5** - Tipagem estática para JavaScript
-- **Tailwind CSS 4** - Framework CSS utility-first
+- **Next.js 15 + Turbopack** - Build ultrarrápido
+- **React 19** - Última versão com recursos avançados
+- **TypeScript 5** - Tipagem completa para melhor DX
+- **Tailwind CSS 4** - CSS otimizado e purged
 
-### Ferramentas de Desenvolvimento
+### 📱 User Experience
 
-- **ESLint** - Linting e análise de código
-- **PostCSS** - Processamento de CSS
-- **Inter Font** - Fonte otimizada via Next.js
+- **Totalmente Responsivo** - Mobile-first design
+- **Navegação Intuitiva** - UX otimizada para conversão
+- **Loading Otimizado** - Performance superior
+- **SEO Friendly** - Metadados e estrutura otimizada
+
+### 💬 Integração WhatsApp
+
+- **Sistema Centralizado** - Configuração única para todos os contatos
+- **Botão Flutuante** - Acesso rápido em todas as páginas
+- **Mensagens Contextuais** - Diferentes mensagens por seção
+- **Design Consistente** - Animação bounce e cores oficiais
+
+## 📱 Páginas e Funcionalidades
+
+### 🏠 Página Principal (`/`)
+
+- **Hero Section** - Apresentação da empresa com CTA
+- **Serviços** - Cards detalhados dos serviços oferecidos
+- **Portfolio** - Projetos em destaque (disponível mas comentado)
+- **CTA Section** - Chamada para ação principal
+- **Contato** - Informações de contato e WhatsApp
+- **Footer** - Links e informações da empresa
+
+### 🎨 Landing Pages (`/landing-pages`)
+
+- **Menu Flutuante** - Navegação centralizada moderna
+- **Hero Section** - Foco em criação de landing pages
+- **Recursos** - Features e vantagens competitivas
+- **Sobre** - Apresentação da metodologia
+- **Preços** - Planos e valores transparentes
+- **Testimonials** - Depoimentos de clientes (cabeleireiro, manicure, psicóloga)
+- **FAQ** - Perguntas frequentes
+- **CTA Final** - Conversão otimizada
+
+### 💻 Manutenção de Computadores (`/manutencao-computadores`)
+
+- **Design Glassmorphism** - Tema roxo/azul moderno
+- **Hero Section** - Apresentação dos serviços técnicos
+- **Problemas Comuns** - Cards dos principais problemas
+- **Serviços** - Limpeza, antivírus, formatação, diagnóstico
+- **CTA** - "Chama no Zap!" com design impactante
+- **Totalmente Responsivo** - Otimizado para mobile
+
+## 🛠️ Tecnologias
+
+### Frontend Core
+
+```json
+{
+  "next": "15.5.3", // Framework React com App Router
+  "react": "19.1.0", // Biblioteca UI com recursos mais recentes
+  "react-dom": "19.1.0", // Renderização DOM
+  "typescript": "^5" // Tipagem estática
+}
+```
+
+### Styling e UI
+
+```json
+{
+  "tailwindcss": "^4", // Framework CSS utility-first
+  "@tailwindcss/postcss": "^4", // Processamento CSS
+  "postcss": "automático" // Post-processamento CSS
+}
+```
+
+### Development Tools
+
+```json
+{
+  "@types/node": "^20", // Tipos Node.js
+  "@types/react": "^19", // Tipos React
+  "@types/react-dom": "^19", // Tipos React DOM
+  "eslint": "^9", // Linting
+  "eslint-config-next": "15.5.3" // Config ESLint Next.js
+}
+```
+
+### Recursos Especiais
+
+- **Turbopack** - Bundler ultrarrápido
+- **App Router** - Sistema de roteamento moderno do Next.js
+- **Server Components** - Renderização otimizada
+- **Image Optimization** - Otimização automática de imagens
+- **Font Optimization** - Carregamento otimizado de fontes
 
 ## 📦 Estrutura do Projeto
 
 ```
 phaleixo-site/
-├── public/                     # Arquivos estáticos
-│   └── afterinstalldebian12.png
-├── src/
-│   ├── app/                    # App Router (Next.js 13+)
-│   │   ├── layout.tsx          # Layout principal
-│   │   ├── page.tsx            # Página inicial
-│   │   ├── globals.css         # Estilos globais
-│   │   └── landing-pages/      # Página de landing pages
-│   │       └── page.tsx
-│   ├── components/             # Componentes React
-│   │   ├── Header.tsx          # Cabeçalho com navegação
-│   │   ├── HeroSection.tsx     # Seção hero moderna
-│   │   ├── ServicesSection.tsx # Seção de serviços
-│   │   ├── PortfolioSection.tsx# Portfolio de projetos
-│   │   ├── CTASection.tsx      # Call-to-action
-│   │   ├── ContactSection.tsx  # Seção de contato
-│   │   ├── Footer.tsx          # Rodapé
-│   │   ├── Icons.tsx           # Ícones personalizados
-│   │   └── WhatsAppFloatingButton.tsx
-│   └── config/                 # Configurações
-│       ├── contact.ts          # Config de contato (protegido)
-│       └── contact.template.ts # Template de configuração
-├── CONTACT_CONFIG.md           # Documentação de contato
-└── README.md                   # Este arquivo
+├── 📁 public/                          # Assets estáticos
+│   └── 🖼️ phaleixo-solucoesdigitais.svg # Logo principal SVG
+│
+├── 📁 src/
+│   ├── 📁 app/                         # App Router (Next.js 15)
+│   │   ├── 📄 layout.tsx               # Layout global da aplicação
+│   │   ├── 📄 page.tsx                 # Página principal (Home)
+│   │   ├── 📄 globals.css              # Estilos globais Tailwind
+│   │   ├── 🖼️ favicon.ico             # Ícone do site
+│   │   │
+│   │   ├── 📁 landing-pages/           # Seção Landing Pages
+│   │   │   └── 📄 page.tsx             # Página de landing pages
+│   │   │
+│   │   └── 📁 manutencao-computadores/ # Seção Manutenção
+│   │       └── 📄 page.tsx             # Página de manutenção
+│   │
+│   ├── 📁 components/                  # Componentes React
+│   │   ├── 🧩 Header.tsx               # Cabeçalho com navegação
+│   │   ├── 🧩 HeroSection.tsx          # Seção hero principal
+│   │   ├── 🧩 ServicesSection.tsx      # Grid de serviços
+│   │   ├── 🧩 PortfolioSection.tsx     # Portfolio de projetos
+│   │   ├── 🧩 CTASection.tsx           # Call-to-action principal
+│   │   ├── 🧩 ContactSection.tsx       # Seção de contato
+│   │   ├── 🧩 Footer.tsx               # Rodapé com logo
+│   │   ├── 🧩 Icons.tsx                # Biblioteca de ícones SVG
+│   │   └── 🧩 WhatsAppFloatingButton.tsx # Botão flutuante WhatsApp
+│   │
+│   └── 📁 config/                      # Configurações
+│       ├── ⚙️ contact.ts               # Configuração de contato (sensível)
+│       └── 📋 contact.template.ts      # Template de configuração
+│
+├── 📄 CONTACT_CONFIG.md                # Documentação de configuração
+├── 📄 README.md                        # Esta documentação
+├── 📄 package.json                     # Dependências e scripts
+├── 📄 tsconfig.json                    # Configuração TypeScript
+├── 📄 tailwind.config.ts               # Configuração Tailwind CSS
+├── 📄 next.config.ts                   # Configuração Next.js
+├── 📄 postcss.config.mjs               # Configuração PostCSS
+└── 📄 eslint.config.mjs                # Configuração ESLint
 ```
 
-## 🚀 Como Executar
+## 🚀 Instalação e Execução
 
 ### Pré-requisitos
 
-- Node.js 18+
-- npm, yarn ou pnpm
+- **Node.js** 18.17 ou superior
+- **npm**, **yarn** ou **pnpm**
+- **Git** para versionamento
 
-### Instalação
-
-1. **Clone o repositório**
+### 1️⃣ Clone o Repositório
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/phaleixo/phaleixo-site.git
 cd phaleixo-site
 ```
 
-2. **Instale as dependências**
+### 2️⃣ Instale as Dependências
 
 ```bash
+# NPM
 npm install
-# ou
+
+# Yarn
 yarn install
-# ou
+
+# PNPM (recomendado)
 pnpm install
 ```
 
-3. **Configure o contato** (Primeira vez)
+### 3️⃣ Configure o Contato (Primeira Execução)
 
 ```bash
-# Copie o template de configuração
+# Copie o template
 cp src/config/contact.template.ts src/config/contact.ts
-```
 
-4. **Edite suas informações de contato**
-
-```bash
-# Edite o arquivo com seus dados reais
+# Edite com seus dados reais
 nano src/config/contact.ts
 ```
 
-5. **Execute em desenvolvimento**
+### 4️⃣ Execute em Desenvolvimento
 
 ```bash
+# NPM
 npm run dev
-# ou
+
+# Yarn
 yarn dev
-# ou
+
+# PNPM
 pnpm dev
 ```
 
-6. **Acesse no navegador**
+### 5️⃣ Acesse o Site
 
 ```
-http://localhost:3000
+🌐 http://localhost:3000
 ```
 
-## ⚙️ Scripts Disponíveis
+### 6️⃣ Build para Produção
 
 ```bash
-# Desenvolvimento com Turbopack (recomendado)
-npm run dev
-
-# Build para produção
+# Build
 npm run build
 
-# Executar em produção
+# Execute em produção
 npm run start
-
-# Análise de código (linting)
-npm run lint
 ```
 
-## 🔧 Configuração
+## ⚙️ Configuração
 
-### Configuração de Contato
+### 📞 Configuração de Contato
 
-O sistema usa um arquivo de configuração centralizado para informações de contato:
+Edite `src/config/contact.ts` com suas informações:
 
 ```typescript
-// src/config/contact.ts
 export const CONTACT_CONFIG = {
   whatsapp: {
-    number: "5511999999999", // Seu número do WhatsApp
+    number: "5511999999999", // Seu número com código do país
     messages: {
-      general: "Mensagem padrão",
-      landingPage: "Mensagem específica para landing pages",
+      general: "Olá! Gostaria de saber mais sobre os serviços da PHALEIXO.",
+      landingPage: "Olá! Tenho interesse em uma landing page profissional.",
+      maintenance: "Olá! Preciso de manutenção no meu computador.",
     },
   },
   email: {
-    address: "contato@seudominio.com",
+    address: "contato@phaleixo.com",
+    subject: "Contato via Site",
   },
 };
+
+export function createWhatsAppUrl(message?: string): string {
+  const baseUrl = `https://wa.me/${CONTACT_CONFIG.whatsapp.number}`;
+  const text = encodeURIComponent(
+    message || CONTACT_CONFIG.whatsapp.messages.general
+  );
+  return `${baseUrl}?text=${text}`;
+}
 ```
 
-**Importante**: O arquivo `contact.ts` está no `.gitignore` para proteger suas informações pessoais.
-
-### Personalização
-
-1. **Cores e Estilos**: Edite `src/app/globals.css`
-2. **Componentes**: Modifique arquivos em `src/components/`
-3. **Conteúdo**: Atualize textos diretamente nos componentes
-4. **Metadados SEO**: Configure em `src/app/layout.tsx`
-
-## 🎨 Design e Animações
-
-### Características Visuais
-
-- **Glassmorphism**: Efeitos de vidro moderno na hero section
-- **Gradientes**: Backgrounds sofisticados com degradês
-- **Animações CSS**: Transições suaves e efeitos hover
-- **Responsividade**: Design adaptável para todos os dispositivos
-
-### Animações Implementadas
+### 🎨 Personalização de Estilos
 
 ```css
-/* Exemplos de animações personalizadas */
-.code-line-animation {
-  /* Linhas de código animadas */
-}
-.float-animation {
-  /* Elementos flutuantes */
-}
-.gradient-shift {
-  /* Mudança de gradientes */
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Suas customizações aqui */
+.custom-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 ```
+
+### 🔧 Configuração Next.js
+
+```typescript
+// next.config.ts
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  // Configurações específicas do projeto
+  images: {
+    domains: ["localhost"],
+  },
+  experimental: {
+    turbopack: true,
+  },
+};
+
+export default nextConfig;
+```
+
+## 🎨 Design e UI/UX
+
+### 🌈 Paleta de Cores
+
+```css
+/* Cores Principais */
+--primary-blue: #3B82F6     /* Azul principal */
+--primary-purple: #8B5CF6   /* Roxo principal */
+--primary-green: #10B981    /* Verde WhatsApp */
+
+/* Cores Neutras */
+--gray-50: #F9FAFB         /* Background claro */
+--gray-900: #111827        /* Texto escuro */
+--white: #FFFFFF           /* Branco puro */
+```
+
+### ✨ Efeitos Visuais
+
+#### Glassmorphism
+
+```css
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+```
+
+#### Gradientes
+
+```css
+.gradient-primary {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+
+.gradient-glass {
+  background: linear-gradient(
+    145deg,
+    rgba(59, 130, 246, 0.1) 0%,
+    rgba(139, 92, 246, 0.1) 100%
+  );
+}
+```
+
+#### Animações
+
+```css
+@keyframes bounce {
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  40%,
+  43% {
+    transform: translate3d(0, -8px, 0);
+  }
+  70% {
+    transform: translate3d(0, -4px, 0);
+  }
+  90% {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+```
+
+### 📐 Layout e Espaçamento
+
+- **Container Max Width**: `max-w-7xl` (1280px)
+- **Padding Horizontal**: `px-4 sm:px-6 lg:px-8`
+- **Padding Vertical**: `py-20` para seções principais
+- **Grid**: Sistema responsivo com breakpoints
 
 ## 📱 Responsividade
 
-O site é totalmente responsivo com breakpoints:
+### 📏 Breakpoints
 
-- **Mobile**: < 768px
-- **Tablet**: 768px - 1024px
-- **Desktop**: > 1024px
-
-## 🔒 Segurança
-
-- **Informações Protegidas**: Contatos não são expostos no repositório
-- **Template System**: Uso de templates para configuração segura
-- **Environment Variables**: Suporte para variáveis de ambiente
-
-## 🚀 Deploy
-
-### Vercel (Recomendado)
-
-```bash
-# Instale a CLI do Vercel
-npm i -g vercel
-
-# Faça o deploy
-vercel
+```css
+/* Mobile First Approach */
+/* xs: 0px - 640px */    Mobile
+/* sm: 640px - 768px */  Mobile Large
+/* md: 768px - 1024px */ Tablet
+/* lg: 1024px - 1280px */ Desktop
+/* xl: 1280px+ */        Desktop Large
 ```
 
-### Outros Provedores
+### 📱 Componentes Responsivos
 
-- **Netlify**: Conecte o repositório GitHub
-- **AWS Amplify**: Configure build settings
-- **Railway**: Deploy direto do GitHub
+#### Header
 
-### Configurações de Build
+```typescript
+// Desktop: Menu horizontal
+// Mobile: Menu hamburger
+
+<nav className="hidden md:flex space-x-8">
+  {/* Desktop Navigation */}
+</nav>
+
+<button className="md:hidden">
+  {/* Mobile Menu Button */}
+</button>
+```
+
+#### Grid de Serviços
+
+```typescript
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {/* 1 coluna mobile, 2 tablet, 3 desktop */}
+</div>
+```
+
+#### Tipografia Responsiva
+
+```typescript
+<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+  {/* Escala progressiva de texto */}
+</h1>
+```
+
+## 🔧 Desenvolvimento
+
+### 📝 Scripts Disponíveis
 
 ```json
 {
-  "scripts": {
-    "build": "next build --turbopack",
-    "start": "next start"
-  }
+  "dev": "next dev --turbopack", // Desenvolvimento com Turbopack
+  "build": "next build --turbopack", // Build otimizado
+  "start": "next start", // Servidor de produção
+  "lint": "eslint" // Análise de código
 }
+```
+
+### 🧪 Comandos Úteis
+
+```bash
+# Desenvolvimento com Turbopack (mais rápido)
+npm run dev
+
+# Análise de código
+npm run lint
+
+# Build e teste local
+npm run build && npm run start
+
+# Limpeza de cache
+rm -rf .next node_modules
+npm install
+```
+
+### 🔍 Debugging
+
+```typescript
+// Console debugging
+console.log("Debug info:", data);
+
+// Network debugging
+// DevTools > Network > Disable Cache
+
+// Performance debugging
+// DevTools > Lighthouse > Generate Report
+```
+
+### 📊 Análise de Bundle
+
+```bash
+# Instalar analisador
+npm install --save-dev @next/bundle-analyzer
+
+# Analisar bundle
+ANALYZE=true npm run build
+```
+
+## 🚀 Deploy
+
+### ☁️ Vercel (Recomendado)
+
+```bash
+# Instalar CLI
+npm i -g vercel
+
+# Deploy
+vercel
+
+# Deploy em produção
+vercel --prod
+```
+
+**Configurações automáticas:**
+
+- Build Command: `npm run build`
+- Output Directory: `.next`
+- Install Command: `npm install`
+
+### 🌐 Netlify
+
+```toml
+# netlify.toml
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "18"
+```
+
+### ☁️ AWS Amplify
+
+```yaml
+# amplify.yml
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm install
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - "**/*"
+```
+
+### 🐳 Docker
+
+```dockerfile
+# Dockerfile
+FROM node:18-alpine
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+
+EXPOSE 3000
+CMD ["npm", "start"]
 ```
 
 ## 📊 Performance
 
-- **Lighthouse Score**: 90+ em todas as métricas
-- **Turbopack**: Build e desenvolvimento acelerados
-- **Font Optimization**: Inter font otimizada via Next.js
-- **Image Optimization**: Processamento automático de imagens
-- **CSS Optimization**: Tailwind CSS com purge automático
+### ⚡ Métricas Lighthouse
 
-## 🤝 Contribuição
+- **Performance**: 95+ pontos
+- **Accessibility**: 100 pontos
+- **Best Practices**: 95+ pontos
+- **SEO**: 100 pontos
 
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+### 🚀 Otimizações Implementadas
 
-## 📄 Documentação Adicional
+#### Next.js Features
 
-- [Configuração de Contato](./CONTACT_CONFIG.md) - Como configurar WhatsApp e email
-- [Next.js Documentation](https://nextjs.org/docs) - Framework principal
-- [Tailwind CSS](https://tailwindcss.com/docs) - Framework CSS
-- [TypeScript](https://www.typescriptlang.org/docs/) - Tipagem estática
+- **App Router** - Roteamento moderno
+- **Server Components** - Renderização otimizada
+- **Image Optimization** - Imagens automáticas
+- **Font Optimization** - Fontes otimizadas
 
-## 📞 Suporte
+#### Tailwind CSS
 
-Para suporte ou dúvidas sobre o projeto:
+- **Purge CSS** - Remoção automática de CSS não usado
+- **JIT Mode** - Compilação just-in-time
+- **Critical CSS** - CSS crítico inline
 
-- **Email**: contato@phaleixo.com
-- **WhatsApp**: Configure conforme documentação
-- **Issues**: Use a aba Issues do GitHub
+#### Bundle Optimization
 
-## 📜 Licença
+- **Tree Shaking** - Remoção de código não usado
+- **Code Splitting** - Divisão automática de código
+- **Lazy Loading** - Carregamento sob demanda
 
-Este projeto é privado e proprietário da PhaleiXo.
+### 📈 Web Vitals
+
+```typescript
+// Monitoramento de performance
+export function reportWebVitals(metric: any) {
+  switch (metric.name) {
+    case "CLS":
+    case "FID":
+    case "FCP":
+    case "LCP":
+    case "TTFB":
+      console.log(metric);
+      break;
+    default:
+      break;
+  }
+}
+```
+
+## 🔒 Segurança
+
+### 🛡️ Dados Sensíveis
+
+```bash
+# Arquivo protegido (não commitado)
+src/config/contact.ts
+
+# Template público
+src/config/contact.template.ts
+```
+
+### 🔐 Headers de Segurança
+
+```typescript
+// next.config.ts
+const nextConfig = {
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "X-Frame-Options",
+            value: "DENY",
+          },
+          {
+            key: "X-Content-Type-Options",
+            value: "nosniff",
+          },
+        ],
+      },
+    ];
+  },
+};
+```
+
+### 🚫 .gitignore
+
+```gitignore
+# Dependências
+node_modules/
+.pnp
+.pnp.js
+
+# Builds
+.next/
+out/
+build/
+
+# Configurações sensíveis
+src/config/contact.ts
+
+# Logs
+*.log
+
+# Ambiente
+.env*
+```
+
+## 📋 Checklist de Deploy
+
+### ✅ Antes do Deploy
+
+- [ ] Configurar `contact.ts` com dados reais
+- [ ] Testar todos os formulários de contato
+- [ ] Verificar responsividade em todos os dispositivos
+- [ ] Executar `npm run build` sem erros
+- [ ] Testar performance com Lighthouse
+- [ ] Verificar SEO e metadados
+- [ ] Validar todas as integrações WhatsApp
+
+### ✅ Pós Deploy
+
+- [ ] Verificar todas as páginas em produção
+- [ ] Testar botões WhatsApp
+- [ ] Validar formulários de contato
+- [ ] Verificar performance em produção
+- [ ] Configurar domínio personalizado
+- [ ] Adicionar SSL/TLS
+- [ ] Configurar redirects se necessário
+
+## 📞 Suporte e Contato
+
+### 🛠️ Suporte Técnico
+
+- **Desenvolvedor**: Paulo (PHALEIXO)
+- **Email**: paulo@phaleixo.com
+- **WhatsApp**: +55 11 99999-9999
+
+### 📚 Recursos e Documentação
+
+- [**Next.js 15 Docs**](https://nextjs.org/docs) - Framework principal
+- [**React 19 Docs**](https://react.dev/) - Biblioteca UI
+- [**Tailwind CSS**](https://tailwindcss.com/docs) - Framework CSS
+- [**TypeScript**](https://www.typescriptlang.org/docs/) - Tipagem
+
+### 🐛 Reportar Issues
+
+Crie uma issue detalhada incluindo:
+
+- Descrição do problema
+- Passos para reproduzir
+- Screenshots se aplicável
+- Informações do ambiente
 
 ---
 
-**Desenvolvido com ❤️ por PhaleiXo**
+## 📝 Changelog
 
-_Transformando ideias em soluções digitais eficientes e escaláveis._
+### v1.0.0 (2025-01-14)
+
+- ✨ Site principal com hero section glassmorphism
+- 🎨 Página de landing pages com menu flutuante
+- 💻 Página de manutenção de computadores
+- 📱 Sistema de WhatsApp integrado
+- 🔧 Arquitetura componentizada
+- 📊 Performance otimizada
+- 🎯 Design responsivo completo
+
+---
+
+## 📜 Licença
+
+Este projeto é **privado e proprietário** da PHALEIXO - Soluções Digitais.
+
+Todos os direitos reservados © 2025 PHALEIXO.
+
+---
+
+<div align="center">
+
+**🚀 Desenvolvido com ❤️ por PHALEIXO**
+
+_Transformando ideias em soluções digitais eficientes e escaláveis_
+
+</div>
