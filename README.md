@@ -1,11 +1,11 @@
-# 🚀 Phalexo - Site Corporativo
+# 🚀 phaleixo - Site Corporativo
 
 ![Next.js](https://img.shields.io/badge/Next.js-15.5.3-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-19.1.0-blue?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-38B2AC?style=for-the-badge&logo=tailwind-css)
 
-Site corporativo moderno da **Phalexo - Soluções Digitais**, especializada em desenvolvimento de sistemas web, landing pages profissionais, integrações WhatsApp e manutenção de computadores.
+Site corporativo moderno da **phaleixo - Soluções Digitais**, especializada em desenvolvimento de sistemas web, landing pages profissionais, integrações WhatsApp e manutenção de computadores.
 
 ## 📋 Índice
 
@@ -260,7 +260,7 @@ export const CONTACT_CONFIG = {
   whatsapp: {
     number: "5511999999999", // Seu número com código do país
     messages: {
-      general: "Olá! Gostaria de saber mais sobre os serviços da Phalexo.",
+      general: "Olá! Gostaria de saber mais sobre os serviços da phaleixo.",
       landingPage: "Olá! Tenho interesse em uma landing page profissional.",
       maintenance: "Olá! Preciso de manutenção no meu computador.",
     },
@@ -591,6 +591,7 @@ CMD ["npm", "start"]
 - **Lazy Loading** - Carregamento sob demanda
 
 <<<<<<< HEAD
+
 ### 📈 Web Vitals
 
 ```typescript
@@ -696,7 +697,7 @@ src/config/contact.ts
 
 ### 🛠️ Suporte Técnico
 
-- **Desenvolvedor**: Paulo (Phalexo)
+- **Desenvolvedor**: Paulo (phaleixo)
 - **Email**: paulo@phaleixo.com
 - **WhatsApp**: +55 11 99999-9999
 
@@ -719,13 +720,15 @@ Crie uma issue detalhada incluindo:
 ---
 
 ## 📝 Changelog
+
 =======
 Este projeto é privado e proprietário da Phaleixo.
 
 ---
 
 **Desenvolvido com ❤️ por Phaleixo**
->>>>>>> 2fe5c4de64c14cc6ba29e839ff4969a70f8fe523
+
+> > > > > > > 2fe5c4de64c14cc6ba29e839ff4969a70f8fe523
 
 ### v1.0.0 (2025-01-14)
 
@@ -741,15 +744,15 @@ Este projeto é privado e proprietário da Phaleixo.
 
 ## 📜 Licença
 
-Este projeto é **privado e proprietário** da Phalexo - Soluções Digitais.
+Este projeto é **privado e proprietário** da phaleixo - Soluções Digitais.
 
-Todos os direitos reservados © 2025 Phalexo.
+Todos os direitos reservados © 2025 phaleixo.
 
 ---
 
 <div align="center">
 
-**🚀 Desenvolvido com ❤️ por Phalexo**
+**🚀 Desenvolvido com ❤️ por phaleixo**
 
 _Transformando ideias em soluções digitais eficientes e escaláveis_
 
