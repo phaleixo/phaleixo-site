@@ -10,6 +10,7 @@ import { ContactSection } from '@/components/ContactSection';
 import { Footer } from '@/components/Footer';
 import { WhatsAppIcon } from '@/components/Icons';
 import { createWhatsAppUrl } from '@/config/contact';
+import About from '@/components/about';
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -53,14 +54,14 @@ export default function Home() {
       <CTASection openWhatsApp={openWhatsApp} />
       
       <ContactSection openWhatsApp={openWhatsApp} />
-      
+      <About/>
       <Footer />
       
       {/* Botão flutuante do WhatsApp */}
       <div className="fixed bottom-6 right-6 z-50">
         <button 
           onClick={openWhatsApp}
-          className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors flex items-center justify-center animate-bounce"
+          className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors flex items-center justify-center animate-bounce cursor-pointer"
           aria-label="Conversar no WhatsApp"
         >
           <WhatsAppIcon />

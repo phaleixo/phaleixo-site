@@ -46,7 +46,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ openWhatsApp }) 
                   <p className="text-gray-600">Converse diretamente pelo WhatsApp</p>
                   <button
                     onClick={openWhatsApp}
-                    className="text-green-600 font-semibold hover:text-green-700 mt-2 inline-block"
+                    className="text-green-600 font-semibold hover:text-green-700 mt-2 inline-block cursor-pointer"
                   >
                     Iniciar Conversa →
                   </button>

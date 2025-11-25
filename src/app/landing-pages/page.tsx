@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react';
 import { createWhatsAppUrl, CONTACT_CONFIG } from '@/config/contact';
 import { Footer } from '@/components/Footer';
 import { WhatsAppIcon, CheckIcon, DesignIcon, ChartIcon, ChatBotIcon, StarIcon } from '@/components/Icons';
+import About from '@/components/about';
 
-// Icons locais que não existem como componentes ainda
+
 
 export default function LandingPages() {
   const [isVisible, setIsVisible] = useState(false);
@@ -154,7 +155,7 @@ export default function LandingPages() {
           </svg>
         </div>
         
-        {/* Elementos de fundo modernos */}
+        {/* Elementos de fundo  */}
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-300 rounded-full opacity-20 blur-3xl animate-pulse-slow"></div>
         <div className="absolute top-1/4 -left-20 w-60 h-60 bg-blue-300 rounded-full opacity-20 blur-3xl animate-pulse-medium"></div>
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-indigo-300 rounded-full opacity-20 blur-3xl animate-pulse-slow"></div>
@@ -165,7 +166,7 @@ export default function LandingPages() {
 
       
 
-      {/* Hero Section moderna */}
+      {/* Hero Section  */}
       <section className="relative z-40 pt-20 pb-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
@@ -190,14 +191,14 @@ export default function LandingPages() {
             <div className={`flex flex-col sm:flex-row gap-4 justify-center transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <button 
                 onClick={() => scrollToSection('pricing')}
-                className="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-8 py-4 rounded-full hover:from-purple-700 hover:to-purple-800 transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 group relative overflow-hidden"
+                className="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-8 py-4 rounded-full hover:from-purple-700 hover:to-purple-800 transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 group relative overflow-hidden cursor-pointer"
               >
                 <span className="relative z-10">Ver Planos</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-purple-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               <button 
                 onClick={openWhatsApp}
-                className="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-200 font-semibold text-lg group relative overflow-hidden"
+                className="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-200 font-semibold text-lg group relative overflow-hidden cursor-pointer"
               >
                 <span className="relative z-10">Falar no WhatsApp</span>
                 <div className="absolute inset-0 bg-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
@@ -227,7 +228,7 @@ export default function LandingPages() {
         <div className="absolute bottom-40 left-20 w-12 h-12 bg-indigo-400 rounded-full opacity-20 animate-float-3"></div>
       </section>
 
-      {/* Features Section moderna */}
+      {/* Features Section  */}
       <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-white/50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -259,13 +260,13 @@ export default function LandingPages() {
         </div>
       </section>
 
-      {/* About Section moderna */}
+      {/* About Section  */}
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 to-blue-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-gray-800 mb-6">
-                Por que escolher a <span className="text-purple-600">Phaleixo</span>?
+                <span>Como podemos te ajudar</span>?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
                 Somos especialistas em criar landing pages de alta conversão e chatbots inteligentes 
@@ -324,7 +325,7 @@ export default function LandingPages() {
         </div>
       </section>
 
-      {/* Pricing Section moderna */}
+      {/* Pricing Section  */}
       <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -374,7 +375,7 @@ export default function LandingPages() {
 
                 <button 
                   onClick={openWhatsApp}
-                  className={`w-full py-4 px-6 rounded-xl font-semibold transition-all duration-200 ${
+                  className={`w-full py-4 px-6 rounded-xl font-semibold transition-all duration-200 cursor-pointer ${
                     plan.highlight
                       ? 'bg-gradient-to-r from-purple-600 to-purple-700 text-white hover:from-purple-700 hover:to-purple-800 shadow-lg hover:shadow-xl'
                       : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
@@ -475,7 +476,7 @@ export default function LandingPages() {
           </p>
           <button 
             onClick={openWhatsApp}
-            className="bg-white text-purple-600 px-8 py-4 rounded-full hover:bg-gray-50 transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 inline-flex items-center"
+            className="bg-white text-purple-600 px-8 py-4 rounded-full hover:bg-gray-50 transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 inline-flex items-center cursor-pointer"
           >
             <WhatsAppIcon />
             <span className="ml-2">Falar com Especialista</span>
@@ -487,14 +488,14 @@ export default function LandingPages() {
         </div>
       </section>
 
-      {/* Footer moderno */}
+      <About />
       <Footer />
 
       {/* Botão flutuante do WhatsApp */}
       <div className="fixed bottom-6 right-6 z-50">
         <button 
           onClick={openWhatsApp}
-          className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors flex items-center justify-center animate-bounce"
+          className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors flex items-center justify-center animate-bounce cursor-pointer"
           aria-label="Conversar no WhatsApp"
         >
           <WhatsAppIcon />

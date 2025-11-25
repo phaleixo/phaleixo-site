@@ -29,14 +29,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ isVisible, openWhatsAp
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={openWhatsApp}
-                className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+                className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 cursor-pointer"
               >
                 <WhatsAppIcon />
                 <span className="ml-2">Conversar no WhatsApp</span>
               </button>
               <button
                 onClick={() => scrollToSection('servicos')}
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-700 font-semibold rounded-lg border-2 border-gray-200 hover:border-blue-300 hover:text-blue-600 transition-all duration-300"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-700 font-semibold rounded-lg border-2 border-gray-200 hover:border-blue-300 hover:text-blue-600 transition-all duration-300 cursor-pointer"
               >
                 Ver Soluções
               </button>

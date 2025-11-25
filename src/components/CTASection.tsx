@@ -20,7 +20,7 @@ export const CTASection: React.FC<CTASectionProps> = ({ openWhatsApp }) => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={openWhatsApp}
-            className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-bold text-lg rounded-lg hover:bg-gray-50 transform hover:-translate-y-1 transition-all duration-300 shadow-lg"
+            className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-bold text-lg rounded-lg hover:bg-gray-50 transform hover:-translate-y-1 transition-all duration-300 shadow-lg cursor-pointer"
           >
             <WhatsAppIcon />
             <span className="ml-2">Orçamento Gratuito</span>

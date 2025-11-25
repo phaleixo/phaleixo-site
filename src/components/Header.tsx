@@ -16,19 +16,19 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen, scrol
           <div className="flex items-center">
             <Image 
               src="/phaleixo-solucoesdigitais.svg" 
-              alt="PHALEIXO - SOLUÇÕES DIGITAIS" 
-              width={148}
-              height={48}
-              className="h-8 w-auto brightness-0"
+              alt="ALEIXO - SOLUÇÕES DIGITAIS" 
+              width={198}
+              height={96}
+              className="h-12 w-auto brightness-0"
             />
           </div>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <button onClick={() => scrollToSection('inicio')} className="text-gray-700 hover:text-blue-600 transition-colors">Início</button>
-            <button onClick={() => scrollToSection('servicos')} className="text-gray-700 hover:text-blue-600 transition-colors">Serviços</button>
-            {/* <button onClick={() => scrollToSection('portfolio')} className="text-gray-700 hover:text-blue-600 transition-colors">Portfolio</button> */}
-            <button onClick={() => scrollToSection('contato')} className="text-gray-700 hover:text-blue-600 transition-colors">Contato</button>
+            <button onClick={() => scrollToSection('inicio')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">Início</button>
+            <button onClick={() => scrollToSection('servicos')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">Serviços</button>
+            {/* <button onClick={() => scrollToSection('portfolio')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">Portfolio</button> */}
+            <button onClick={() => scrollToSection('contato')} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">Contato</button>
           </nav>
 
           {/* Mobile menu button */}
