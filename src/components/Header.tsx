@@ -16,10 +16,10 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen, scrol
           <div className="flex items-center">
             <Image 
               src="/phaleixo-solucoesdigitais.svg" 
-              alt="ALEIXO - SOLUÇÕES DIGITAIS" 
+              alt="PHALEIXO - SOLUÇÕES DIGITAIS" 
               width={198}
               height={96}
-              className="h-12 w-auto brightness-0"
+              className="h-12 w-auto"
             />
           </div>
           
