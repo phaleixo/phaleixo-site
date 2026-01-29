@@ -1,57 +1,65 @@
-import React from 'react';
-import { CodeIcon } from './Icons';
+import React from "react";
+import Image from "next/image";
 
 interface Project {
   title: string;
   category: string;
   description: string;
   image: string;
+  url?: string;
   tech: string[];
 }
 
 const projects: Project[] = [
   {
-    title: "Sistema de Gestão ERP",
+    title: "Orça Fácil",
     category: "Sistema Web",
-    description: "ERP completo para gestão empresarial",
-    image: "bg-gradient-to-br from-blue-400 to-indigo-600",
-    tech: ["React", "Node.js", "PostgreSQL"]
+    description: "Sistema completo para orçamento MEI",
+    image: "/capturas_apps/orcafacil.png",
+    tech: ["Django", "Node.js", "SQLite"],
   },
   {
-    title: "E-commerce MultiStore",
+    title: "Monica Menezes Store",
     category: "Loja Virtual",
-    description: "Marketplace com múltiplas lojas",
-    image: "bg-gradient-to-br from-purple-400 to-pink-600",
-    tech: ["Next.js", "Stripe", "MongoDB"]
+    url: "https://monicamenezes.shop",
+    description:
+      "Marketplace de produtos para beleza como perfumes e cosméticos",
+    image: "/capturas_apps/monicamenezes.png",
+    tech: ["Next.js", "Shadcnui", "PostgreSQL", "SEO"],
   },
   {
-    title: "App de Delivery",
+    title: "DiverGente",
     category: "Mobile App",
-    description: "Aplicativo de delivery integrado",
-    image: "bg-gradient-to-br from-green-400 to-teal-600",
-    tech: ["React Native", "WhatsApp API"]
+    description: "Aplicativo para gestão de de tempo para divergentes",
+    image: "/capturas_apps/divergente.png",
+    tech: ["React Native"],
   },
   {
-    title: "Portal Imobiliário",
-    category: "Site Institucional",
-    description: "Portal completo para imobiliária",
-    image: "bg-gradient-to-br from-orange-400 to-red-600",
-    tech: ["Next.js", "CMS", "SEO"]
+    title: "Taynara Thompson",
+    category: "Site",
+    url: "https://www.taynarathompson.com.br",
+    description: "landing page para escritora e palestrante",
+    image: "/capturas_apps/taynarathompson.png",
+    tech: ["Next.js", "CMS", "SEO"],
   },
   {
-    title: "Sistema Hospitalar",
-    category: "Sistema Web",
-    description: "Gestão completa hospitalar",
-    image: "bg-gradient-to-br from-cyan-400 to-blue-600",
-    tech: ["React", "Node.js", "MySQL"]
+    title: "Pós-Instalação do Debian",
+    category: "Site",
+    url: "https://phaleixo.github.io/after_install_debian_12/index.html",
+    description:
+      "Site com scripts e tutoriais sobre Debian, facilitando a vida dos usuários",
+    image: "/capturas_apps/debian.png",
+    tech: ["React", "Node.js", "MySQL"],
   },
   {
-    title: "Chatbot Inteligente",
-    category: "Automação",
-    description: "Bot para atendimento automatizado",
-    image: "bg-gradient-to-br from-indigo-400 to-purple-600",
-    tech: ["Python", "WhatsApp", "AI"]
-  }
+    title: "Ecosol autista",
+    category: "Site",
+    url: "https://www.ecosolautista.com.br",
+    description:
+      "Site de economia solidaria para que autistas possam vender seus produtos e divulgar seus trabalhos",
+    image: "/capturas_apps/ecosol.png",
+    tech: ["Next.js", "Shadcnui", "PostgreSQL", "SEO"],
+  },
 ];
 
 interface ProjectCardProps {
@@ -60,27 +68,51 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
   <div className="group cursor-pointer">
-    <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-      <div className={`aspect-video ${project.image} flex items-center justify-center group-hover:scale-105 transition-transform duration-300`}>
-        <div className="text-center text-white">
-          <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center backdrop-blur-sm">
-            <CodeIcon />
+    <div className="overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 bg-white">
+      {project.url ? (
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block"
+        >
+          <div className="aspect-video relative w-full">
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
+            />
           </div>
-          <h3 className="text-lg font-semibold">{project.title}</h3>
-          <p className="text-sm opacity-90">{project.description}</p>
+        </a>
+      ) : (
+        <div className="aspect-video relative w-full">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover transition-transform duration-300"
+          />
         </div>
-      </div>
-      <div className="p-6 bg-white">
-        <div className="flex justify-between items-center mb-3">
+      )}
+      <div className="p-6">
+        <div className="flex justify-between items-center mb-2">
           <span className="text-sm text-gray-600">{project.category}</span>
         </div>
-        <h3 className="text-lg font-bold text-gray-900 mb-3">{project.title}</h3>
-        <div className="flex flex-wrap gap-2">
-          {project.tech.map((tech, techIndex) => (
-            <span key={techIndex} className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full font-medium">
-              {tech}
-            </span>
-          ))}
+        <h3 className="text-lg font-bold text-gray-900">{project.title}</h3>
+        <p className="text-sm text-gray-700 mt-2 mb-4">{project.description}</p>
+        <div className="flex items-center justify-between">
+          <div className="flex flex-wrap gap-2">
+            {project.tech.map((tech, techIndex) => (
+              <span
+                key={techIndex}
+                className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full font-medium"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+          {/* botão 'Ver site' removido — imagem agora é clicável quando `url` existe */}
         </div>
       </div>
     </div>

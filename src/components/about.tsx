@@ -18,7 +18,7 @@ export const About: React.FC<AboutProps> = ({
     { degree: 'Montagem e Manutenção de Microcomputadores', institution: 'SENAI'},
     { degree: 'Manutenção de Computadores e Celulares', institution: 'CEBRAC' },
     { degree: 'Bacharelado em T.I', institution: 'UNIVESP'},
-    { degree: 'Pós-graduação em Desenvolvimento Web', institution: 'IFSUL'}
+    { degree: 'Pós-graduação em Desenvolvimento Web', institution: 'IFSULDEMINAS' },
   ],
 }) => {
   return (

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { ServicesSection } from "@/components/ServicesSection";
-//import { PortfolioSection } from '@/components/PortfolioSection';
+import { PortfolioSection } from '@/components/PortfolioSection';
 import { CTASection } from "@/components/CTASection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
@@ -168,7 +168,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <PortfolioSection /> */}
+      <PortfolioSection />
 
       <CTASection openWhatsApp={openWhatsApp} />
 
