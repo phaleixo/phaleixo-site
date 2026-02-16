@@ -51,7 +51,13 @@ export const Header: React.FC<HeaderProps> = ({
               href="/manutencaocomputador"
               className="text-gray-700 hover:text-blue-600 transition-colors"
             >
-              Manutenção
+              Manutenção Computador
+            </Link>
+            <Link
+              href="/manutencaocelular"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
+            >
+              Manutenção Celular
             </Link>
             <button
               onClick={() => scrollToSection("contato")}
@@ -112,7 +118,13 @@ export const Header: React.FC<HeaderProps> = ({
                 href="/manutencaocomputador"
                 className="text-gray-700 hover:text-blue-600 transition-colors text-left"
               >
-                Manutenção
+                Manutenção Computador
+              </Link>
+              <Link
+                href="/manutencaocelular"
+                className="text-gray-700 hover:text-blue-600 transition-colors text-left"
+              >
+                Manutenção Celular
               </Link>
               <button
                 onClick={() => scrollToSection("contato")}

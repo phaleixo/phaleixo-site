@@ -132,6 +132,23 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Blue oscillation background for specific pages */
+.blue-oscillate {
+  background: linear-gradient(120deg, #001428 0%, #000f1b 25%, #001629 50%, #00111f 75%, #001428 100%);
+  background-size: 600% 600%;
+  animation: blueOsc 14s ease-in-out infinite;
+}
+
+@keyframes blueOsc {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blue-oscillate { animation: none; }
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
