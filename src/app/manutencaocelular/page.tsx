@@ -1,39 +1,49 @@
-"use client";
-
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Footer } from "../../components/Footer";
-import {
-  Smartphone,
-  BatteryCharging,
-  Droplet,
-  Bug,
-  Wrench,
-  Volume2,
-  Check,
-} from "lucide-react";
+import { Smartphone, BatteryCharging, Droplet, Bug, Wrench, Volume2, Check,} from "lucide-react";
 import About from "@/components/about";
 import IssueList from "@/components/IssueList";
 import ServiceCard from "@/components/ServiceCard";
 import ContactButton from "@/components/ContactButton";
 
-export default function ManutencaoCelularPage() {
-  const scrollToSection = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
 
-  const openWhatsApp = () => {
-    const phone = "5516988380508";
-    const text = encodeURIComponent(
-      "Olá, gostaria de um orçamento para conserto de celular.",
-    );
-    const url = `https://wa.me/${phone}?text=${text}`;
-    window.open(url, "_blank");
-  };
+// Metadata customizado para esta página
+export const metadata: Metadata = {
+  title: "PHALEIXO - Manutenção de Celulares",
+  description: "Manutenção completa de celulares com peças originais e garantia. Reparos rápidos e profissionais para todos os modelos.",
+  keywords: ["manutecao celulares","phaleixo","Paulo Henrique Aleixo de Campos","Jardinopolis","Ribeirao preto", "tela quebrada", "WhatsApp", "celular quebrou", "manutenção"],
+
+  metadataBase: new URL(process.env.SITE_URL ?? "https://www.phaleixo.dev"),
+  openGraph: {
+    title: "PHALEIXO - Manutenção de Celulares",
+    description: "Manutenção completa de celulares com peças originais e garantia. Reparos rápidos e profissionais para todos os modelos.",
+    url: "/manutencaocelular",
+    images: [
+      {
+        url: "/metadata.png", 
+        width: 1200,
+        height: 630,
+        alt: "Manutenção de Celulares - Phaleixo"
+      }
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/metadata.png"],
+  },
+};
+
+export default function ManutencaoCelularPage() {
+  const phone = "5516988380508";
+  const whatsappHref = `https://wa.me/${phone}?text=${encodeURIComponent(
+    "Olá, gostaria de um orçamento para conserto de celular.",
+  )}`;
 
   return (
     <div className="min-h-screen bg-[#020d18] blue-oscillate text-white">
       <main className="pt-16">
+       
         <section className="max-w-7xl mx-auto px-6 md:px-8 py-0">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="flex items-start gap-0">
@@ -69,16 +79,13 @@ export default function ManutencaoCelularPage() {
 
               <div className="flex items-center gap-4">
                 <ContactButton
-                  onClick={openWhatsApp}
-                  label="Paulo Aleixo 16988380508"
+                  href={whatsappHref}
+                  label="Paulo Aleixo 16-988380508"
                 />
 
-                <button
-                  onClick={() => scrollToSection("servicos")}
-                  className="text-gray-300 hover:text-white"
-                >
+                <a href="#servicos" className="text-gray-300 hover:text-white">
                   Ver Serviços
-                </button>
+                </a>
               </div>
             </div>
           </div>
