@@ -76,13 +76,13 @@ export default function ManutencaoCelularPage() {
           <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-6 w-full">
             {/* Título Principal */}
             <div className="text-center md:text-left">
-              <h1 className="text-white text-2xl md:text-6xl lg:text-7xl font-black italic tracking-tighter leading-tight md:leading-tight md:max-w-md mx-auto md:mx-0">
+              <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-black italic tracking-tighter leading-tight md:leading-tight md:max-w-md mx-auto md:mx-0">
                 A TELA DO SEU CELULAR QUEBROU?
               </h1>
 
               <div className="mt-3 inline-block border-2 border-white/80 bg-white/10 px-4 py-1.5 rounded-md">
                 <p className="text-white font-black tracking-[0.2em] text-sm md:text-base">
-                  RESOLVA HOJE AINDA
+                  RESOLVA HOJE AINDA!
                 </p>
               </div>
             </div>
@@ -91,8 +91,8 @@ export default function ManutencaoCelularPage() {
             <div className="flex flex-row items-start gap-4 md:gap-8 lg:gap-12 mt-6 md:mt-8">
               
               {/* Imagem - Lado Esquerdo */}
-              <div className="w-2/5 md:w-1/2 flex justify-center">
-                <div className="w-full max-w-[200px] md:max-w-[320px] lg:max-w-[400px] drop-shadow-[0_20px_50px_rgba(241,90,36,0.3)]">
+              <div className="w-3/5 md:w-1/2 flex justify-center">
+                <div className="w-full max-w-[320px] md:max-w-[320px] lg:max-w-[400px] drop-shadow-[0_20px_50px_rgba(241,90,36,0.3)]">
                   <Image
                     src="/telaquebrada.png"
                     alt="Celular com tela quebrada"
@@ -142,7 +142,7 @@ export default function ManutencaoCelularPage() {
                   <WhatsAppIcon />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-white text-xs font-bold leading-none">
+                  <span className="text-white text-lg font-bold leading-none">
                     Falar com Paulo
                   </span>
                   <span className="text-white font-black text-lg md:text-2xl whitespace-nowrap leading-none mt-1">
