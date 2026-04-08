@@ -41,7 +41,7 @@ export default function CurriculoPage() {
           Resumo Profissional
         </h3>
         <div className="mb-5 pr-5">
-          Desenvolvedor Web Fullstack com 3 anos de experiência, especializado
+          Desenvolvedor Web Fullstack com 4 anos de experiência, especializado
           no ecossistema JavaScript e tecnologias modernas de nuvem.
           <br />
           Experiencia com NextJS em frontend/backend e criação de APIs modernas.
